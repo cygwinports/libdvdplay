@@ -1,0 +1,10 @@
+DESCRIPTION="Library for playing DVDs (obsolete)"
+HOMEPAGE="http://developers.videolan.org/libdvdplay/"
+SRC_URI="http://download.videolan.org/pub/${PN}/${PV}/${P}.tar.bz2"
+
+abi=0
+PKG_NAMES="${PN} ${PN}${abi} ${PN}-devel"
+PKG_HINTS="setup runtime devel"
+PKG_CONTENTS[0]=	# empty
+PKG_CONTENTS[1]="usr/bin/*-${abi}.dll usr/share/doc/"
+PKG_CONTENTS[2]='usr/include/ usr/lib/'
